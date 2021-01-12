@@ -1,0 +1,13 @@
+body {
+  background-color: wheat;
+  color: grey;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 2px solid rosybrown;
+}
