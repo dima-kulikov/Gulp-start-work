@@ -19,3 +19,13 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.img {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.ppp {
+  width: 60%;
+  padding: 10px;
+}

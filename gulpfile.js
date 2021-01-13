@@ -39,7 +39,8 @@ let { src, dest } = require('gulp'),
   uglify = require("gulp-uglify-es").default,
   imagemin = require("gulp-imagemin"),
   webp = require("gulp-webp"),
-  webphtml = require("gulp-webp-html");
+  webphtml = require("gulp-webp-html"),
+  svgSprite = require("gulp-svg-sprite");
   // webpcss = require("gulp-webpcss"); //-- не работает!!
 
 
@@ -126,6 +127,19 @@ function images() {
   .pipe(dest(path.build.img))
   .pipe(browsersync.stream())
 }
+
+gulp.task('svgSprite', function(){
+  return gulp.src([sourse_folder + '/iconsprite/*.svg'])
+  .pipe(svgSprite({
+    mode:{
+      stack:{
+        sprite: "../icons/icons.svg", //sprite file name
+        example: true //показывает результат соединения иконок
+      }
+    },
+  }))
+  .pipe(dest(path.build.img))
+})
 
 function watchFiles(params){
 gulp.watch([path.watch.html], html);
