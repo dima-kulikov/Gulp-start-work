@@ -1,6 +1,9 @@
-<img class="img" width="100%" src="https://github.com/dima-kulikov/Gulp-start-work/img/foto.jpg" alt="11" />
+<section>
+    <!-- @@include('html/header.html') -->
 
-<h1 class="text-center">Gulp </h1>
+    <img class="img" width="100%" src="/img/foto.jpg" alt="11" />
+
+    <h1 class="text-center">Gulp </h1>
     <h2 class="text-center">Стартовая сборка для верстки</h2>
 
     <p>1.Для работы открываем консоль и даем команду:</p>
@@ -29,4 +32,5 @@
       <li>webp в css, все изображения которые в css, ставит формат webp
         (неработает, нужнапроверка!)</li>
       <li>есть файл normalize, (подводит под один стандарт css настройки разных браузеров.) </li>
-</ul>
+    </ul>
+  </section>
