@@ -1,55 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <title>TEST UA</title>
-  </head>
-  <body>
-    @@include('html/header.html')
-    <main class="main">
-      <h1>главный текст</h1>
-      <img class="img" width="40%" src="/img/foto.jpg" alt="11" />
+<html lang="ru">
 
-      <div class="bg img"></div>
-      <div class="flex">
-        <p class="ppp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia itaque
-          qui odio eos natus cupiditate voluptate dolor cumque. Quod aliquam
-          commodi aperiam quam perferendis in fuga omnis modi voluptate
-          voluptatem. Expedita doloribus enim, ratione eligendi laudantium
-          dolorem odit quas, delectus, tempora est unde culpa optio. Placeat
-          ipsam perferendis vero exercitationem voluptates aliquam, iure
-          molestias beatae consectetur quisquam quos repellendus voluptate,
-          officia sequi non dolores eligendi ea libero, veritatis dolorum.</p>
+<head>
+  <meta charset="UTF8" />
+  <meta name="viewport" content="width=device-width, initialscale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>TEST UA</title>
+</head>
 
-        <p
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sed
-          ex ipsa libero nam culpa facere exercitationem tempora eaque numquam
-          corporis, itaque, omnis aperiam reiciendis similique!</p>
-      </div>
+<body>
+  <section>
+    <!-- @@include('html/header.html') -->
 
+    <img class="img" width="100%" src="/img/foto.jpg" alt="11" />
 
-    </main>
+    <h1 class="text-center">Gulp </h1>
+    <h2 class="text-center">Стартовая сборка для верстки</h2>
 
-    <!-- -------------- Работа галпа ---------------
+    <p>1.Для работы открываем консоль и даем команду:</p>
+    <p> <strong>"npm i"</strong> (установка всех пакето в впроэкт)</p>
+    <p>2.запуск галпа командой:</p>
+    <p><strong>"gulp"</strong></p>
 
-    запуск галпа командой:
-    gulp -->
+    <p>Под капотом Gulp имеет:</p>
+    <ul>
+      <li>открытие страницы в браузере с html</li>
+      <li>групировка html в один файл, через @@include путь к html, который
+        нужно вставить</li>
+      <li>при ctrl+s сохранение данных и автоперезагрузка страницы</li>
+      <li>scss</li>
+      <li>обработка и перевод scss в стандартный css</li>
+      <li>автопрефиксер</li>
+      <li>групировка медиазапросов(находит все медиазапросы и групирует внизу
+        css)</li>
+      <li>"cleancss" сжимает css и создает файл min.css(в конечно йпапке css
+        файл и min.css)</li>
+      <li>сборка js файлов в один</li>
+      <li>создание обычного js файла и min.js</li>
+      <li>оптимизация изображений (уменьшает размер изображения на 40-50%)</li>
+      <li>создания (конвертирование) формата изображения WEBp</li>
+      <li>webp html сразу в html подключает данный формат изображений</li>
+      <li>webp в css, все изображения которые в css, ставит формат webp
+        (неработает, нужнапроверка!)</li>
+      <li>есть файл normalize, (подводит под один стандарт css настройки разных браузеров.) </li>
+    </ul>
+  </section>
 
-    <!-- под капотом стоит:
-    - открытие страницы в браузере с html
-    - групировка html в один файл, через @@include  путь к html, который нужно вставить
-    - при ctrl+s сохранение данных и авто перезагрузка страницы
-    - scss
-    - обработка и перевод scss в стандартный css
-    - автопрефиксер   
-    - групировка медиа запросов (находит все медиа запросы и групирует внизу css) 
-    - "clean css" - чистит css файлы
-    - создание обычного css файла и min.css
-    - сборка js файлов в один
-   - создание обычного js файла и min.js
--->
-    <!-- <script src="js/script.min.js"></script> -->
-  </body>
+  <!-- <! <script src="js/script.min.js"></script>  -->
+</body>
+
 </html>
