@@ -1,5 +1,7 @@
-<img class="img" width="100%" src="/img/gulp.png" alt="11" />
+<img class="img" width="100%" src="gulp.png" alt="11" />
+
 ![Banner](./gulp.png)
+
 <h1 class="text-center">Gulp </h1>
 <h2 class="text-center">Стартовая сборка для верстки</h2>
 
