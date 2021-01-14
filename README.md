@@ -1,7 +1,4 @@
-<section>
-    <!-- @@include('html/header.html') -->
 
-    <img class="img" width="100%" src="/img/foto.jpg" alt="11" />
 
     <h1 class="text-center">Gulp </h1>
     <h2 class="text-center">Стартовая сборка для верстки</h2>
@@ -33,4 +30,3 @@
         (неработает, нужнапроверка!)</li>
       <li>есть файл normalize, (подводит под один стандарт css настройки разных браузеров.) </li>
     </ul>
-  </section>
